@@ -1,0 +1,108 @@
+//have all imports in this file
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+@import "bourbon/bourbon";
+@import "susy/susy";
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'common';
+
+.wrapper{
+	@include container(80%);
+}
+
+.blogTitle{
+	@include span(6);
+	padding:$tny 0;
+	a{
+		text-decoration:none;
+		color:inherit;
+	}
+}//end of blogTitle
+
+.mainNav{
+	@include span(6);
+
+	li{
+		float:left;
+		list-style:none;
+		margin:0;
+		text-align:right;
+		box-sizing:border-box;
+
+		a{
+			color:inherit;
+			text-decoration: none;
+			@include trans();
+
+			&:hover{color:$black};
+		}
+	}	
+}
+
+.hero{
+
+}
+
+.blogMessage{
+	font-size:$lg;
+	text-align:center;
+}
+
+.post{
+	@include span(2 of 10);
+	padding:1%;
+
+	img{
+		max-width:100%;
+		height:auto;
+	}
+}
+
+.single{
+	.piece{
+		box-sizing:border-box;
+		@include span(5 omega);
+		height:100%;
+
+		img{
+			width:90%;
+			background:$light-grey;
+		}
+	}
+
+	article{
+		position:fixed;
+		box-sizing:border-box;
+		@include span(5);
+
+		h1{
+
+		}
+
+		.info{
+		}
+
+		.description{
+
+		}
+
+		.postNav{
+			a{
+				display:inline-block;
+				@include span(1 of 3);
+				text-align:center;
+				color: $grey;
+				font-family:$mainFont;
+				text-decoration:none;
+				@include trans();
+
+				&:hover{
+					color:$black;
+				}
+
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+//------------------------Susy
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  use-custom: (
+    box-sizing: false
+  )
+);
+
+
+//------------------------Typography
+
+@font-face{
+	font-family: 'Axis' sans-serif;
+	src:url('fonts/axis.otf');
+}
+
+@mixin headline(){
+	font-family: $headlineFont sans-serif;
+	font-weight:900;
+	letter-spacing:0.8rem;
+	text-transform:uppercase;
+}
+
+$headlineFont:		'Axis' sans-serif;
+$mainFont:			'Lato' sans-serif;
+
+//------------------------Type Sizing
+
+$minFont:			0.6em;
+$liFont:			0.7em;
+$smFont:			1em;
+$regFont:			1.5em;
+$medFont:			2em;
+$lgFont:			2.5em;
+
+//------------------------Colors
+
+$red:				#e74c3c;
+$blue:				#3498db;
+$green:				#2ecc71;
+$black:				#444;
+$grey:				#777;
+$mid-grey:			#999;
+$light-grey:		#e9e9e9;
+$white:				#fff;
+
+//------------------------Spacing
+
+$mic:				5px;
+$tny:				8px;
+$sm:				15px;
+$reg:				30px;
+$med:				45px;
+$lg:				60px;
+$xl:				90px;
+$xxl:				120px;
