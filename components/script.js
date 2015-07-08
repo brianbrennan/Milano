@@ -1,1 +1,1 @@
-$(document).ready(function(){var l=$(".mainNav ul li").length;l>5?($(".mainNav ul li").css("width","15%"),$(".mainNav ul li:nth-child(6n)").css("clear","both")):$(".mainNav ul li").css("width",100/l+"%")}),console.log("blah blah blah");
+$(document).ready(function(){var i=$(".mainNav ul li").length;i>5?($(".mainNav ul li").css("width","15%"),$(".mainNav ul li:nth-child(6n)").css("clear","both")):$(".mainNav ul li").css("width",100/i+"%")});

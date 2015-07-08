@@ -61,48 +61,48 @@
 }
 
 .single{
-	.piece{
-		box-sizing:border-box;
-		@include span(5 omega);
-		height:100%;
+	header{
+		margin-bottom:$lg;
+	}
+	.postTitle{font-size:$lg;}
 
-		img{
-			width:90%;
-			background:$light-grey;
+	.postTitle,.postAuthor,.postDate{
+		text-align:center;
+		margin:0;
+		line-height: 1.2;
+	}
+
+	p{
+		height:457px;
+		margin-bottom:$lg;
+		display:table;
+		text-align:center;
+		&:nth-of-type(odd){
+			@include span(4);
+			span{padding-left:$lg;}
+		}
+
+		&:nth-of-type(even){
+			@include span(4 omega);
+			span{padding-right:$lg;}
+		}
+
+		span{
+			display:table-cell;
+			vertical-align: middle;
+			text-align:left;
+		}
+	}
+	img{
+		&:nth-of-type(even){
+			@include span(6);
+			clear:left;
+		}
+
+		&:nth-of-type(odd){
+			@include span(6 omega);
 		}
 	}
 
-	article{
-		position:fixed;
-		box-sizing:border-box;
-		@include span(5);
 
-		h1{
-
-		}
-
-		.info{
-		}
-
-		.description{
-
-		}
-
-		.postNav{
-			a{
-				display:inline-block;
-				@include span(1 of 3);
-				text-align:center;
-				color: $grey;
-				font-family:$mainFont;
-				text-decoration:none;
-				@include trans();
-
-				&:hover{
-					color:$black;
-				}
-
-			}
-		}
-	}
 }
